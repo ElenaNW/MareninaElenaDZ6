@@ -1,0 +1,17 @@
+package DZ6MareninaElenaJava;
+import java.util.HashSet;
+import java.util.Set;
+
+public class Laptop {
+    public static void main(String[] args) {
+        Set<Specification> set = new HashSet<>();
+        set.add(new Specification("Ноутбук 1", 52000, "ASUS", "Великобритания", "Windows5", 256, 2021));
+        set.add(new Specification("Ноутбук 2", 58000, "HP", "Новая Зеландия", "mac", 128, 2023));
+        set.add(new Specification("Ноутбук 3", 91000, "ORT", "Китай", "WindowsXP", 512, 1985));
+        set.add(new Specification("Ноутбук 4", 15000, "Rus", "Россия", "Windows7", 128, 2005));
+
+        Work operation = new Work(set);
+        operation.start();
+    }
+
+}
